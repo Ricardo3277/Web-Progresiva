@@ -1,0 +1,123 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+body {
+    background-image: url('/img/BACK.jpg');
+    background-repeat: no-repeat;
+}
+
+#logo {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+#encabezado {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+#menu {
+    margin-top: 40px;
+}
+
+#menu ul li a:hover {
+    background-color: rgb(102, 102, 245);
+    color: white;
+}
+
+#menu li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: large;
+    font-weight: bolder;
+}
+
+#menu ul {
+    list-style: none;
+    display: flex;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-weight: bolder;
+}
+
+#menu li {
+    list-style: none;
+    display: flex;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#slide {
+    width: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.205);
+    height: 300px;
+    padding-top: 8%;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+#container {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.205);
+    margin-bottom: 15px;
+    color: antiquewhite;
+}
+
+#servicios {
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    text-align: center;
+}
+
+#videos {
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    text-align: center;
+}
+
+.subheader {
+    height: 150px;
+    text-align: center;
+}
+
+.subheader h1 {
+    font-size: 50px;
+    font-weight: 200;
+    line-height: 140px;
+    color: rgb(255, 255, 255);
+}
+
+#pie {
+    background-color: rgba(0, 0, 0, 0.205);
+    width: 100%;
+    text-align: center;
+    padding: 15px 0px;
+    color: white;
+    font-weight: bold;
+}
+
+@media(max-width: 780px) {
+    #servicios {
+        flex-direction: column;
+    }
+    #videos {
+        flex-direction: column;
+    }
+    #encabezado {
+        flex-direction: column;
+    }
+    #logo {
+        flex-direction: column;
+    }
+}
